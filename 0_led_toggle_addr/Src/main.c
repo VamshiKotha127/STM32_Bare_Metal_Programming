@@ -50,7 +50,7 @@ int main(void)
 	while(1)
 	{
 
-		//GPIOA_OD_R |= LED_PIN; // static LEN ON state
+		//GPIOA_OD_R |= LED_PIN; // static LED ON state
 
 		GPIOA_OD_R ^= LED_PIN; // toggle
 		for(int i=0; i < (int)1e6; i++)
