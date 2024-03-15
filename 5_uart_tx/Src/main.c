@@ -107,7 +107,7 @@ void uart2_write(int ch)
 
 	while(!(USART2->SR & SR_TXE)){}
 
-	USART2->DR = ch & (0x00ff); // as we want to transmit 8 bit data. DR -->data register
+	USART2->DR = ch & (0x00ff); // as we want to transmit 8 bit data. DR -->data register. USART2_DR supports 8 bit data remaining are reserved
 
 
 }
